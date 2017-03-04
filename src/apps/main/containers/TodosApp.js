@@ -8,6 +8,13 @@ import Todos from "../components/Todos";
 import { addTodo, removeTodo, fetchTodos } from "../actions/todos";
 
 export class TodosApp extends Component {
+  props: {
+    todos: Array<string>,
+    addTodo: Function,
+    removeTodo: Function,
+    fetchTodos: Function
+  };
+
   /**
    * Called by ReactRouter before loading the container. Called prior to the
    * React life cycle so doesn't have access to component's props or state.
@@ -25,13 +32,6 @@ export class TodosApp extends Component {
   static gsBeforeRoute ({dispatch}) {
     return dispatch(fetchTodos());
   }
-
-  props: {
-    todos: Array<string>,
-    addTodo: Function,
-    removeTodo: Function,
-    fetchTodos: Function
-  };
 
   componentDidMount () {
     // @NOTE: shouldn't have to do this, it should already be pre-fetched in
