@@ -14,7 +14,7 @@ test against branch following GlueStick dev install steps
 # Issues
 We can keep a list of issues here and I'll cross them out as they are resolved.
  - `gsBeforeRoute` is not working https://github.com/TrueCar/gluestick/issues/686
-  - visit [http://localhost:8888/todos](http://localhost:8888/todos) once it is running
+  - visit [http://localhost:8888/todos](http://localhost:8888/todos) once it is running and you should be able to add items to the todo list, refresh the page and it should load the items.
   - This issue can be best understood by looking at these lines of code: https://github.com/toddw/gluestick-v1-testing/blob/master/src/apps/main/containers/TodosApp.js#L32-L40
   - We shouldn't have to fetch on `componentDidMount`
  - How do we expose the express app? https://github.com/TrueCar/gluestick/issues/716
