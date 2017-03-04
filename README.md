@@ -7,8 +7,8 @@ install latest GlueStick release candiate 1.0.0-rc.x
 test against branch following GlueStick dev install steps
 
 # Setup
-`yarn`
-`gluestick start`
+- `yarn`
+- `gluestick start`
 
 # Issues
 We can keep a list of issues here and I'll cross them out as they are resolved.
